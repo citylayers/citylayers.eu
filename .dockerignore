@@ -1,0 +1,53 @@
+# Dependencies (will be installed in Docker)
+node_modules
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Documentation
+README.md
+*.md
+docs
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build outputs (TypeScript builds in Docker)
+dist
+client/dst
+
+# Test and coverage
+coverage
+test
+*.test.js
+*.spec.js
+
+# Temp files
+tmp
+temp
+.cache
+
+# Environment files (passed as runtime vars)
+.env
+.env.local
+.env.*.local
+.keys
+
+# CI/CD
+.github
+
+# Assets not needed in production
+.assets

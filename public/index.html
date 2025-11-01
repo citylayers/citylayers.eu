@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Layers</title>
+    <link rel="stylesheet" href="./styles.css?v=1.3" />
+    <link href="./sweeper.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <meta name="description" content="Digital urban participation platform" />
+    <meta name="robots" content="noindex">
+    <meta
+      name="keywords"
+      content="Citizen participation platform, digital tool, urban research"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="wrapper">
+        <nav>
+          <div class="logo">
+            <img onClick="window.location.reload();" src="https://storage.googleapis.com/citylayers-eu/logo/logo_2.svg" alt="City Layers Logo" />
+          </div>
+          <ul class="nav-links">
+            <li>
+              <a href="#" onClick="window.location.reload();"
+                >Home</a
+              >
+            </li>
+            <li>             
+              <a onclick="scrollIntoViewWithOffset('#about', 0)"
+                >About</a
+              >
+            </li>
+            <li><a onclick="scrollIntoViewWithOffset('#contact', 0)">Contact</a></li>
+            <li>
+              <a href="https://app.citylayers.eu/map/Mobility%20Dashboard" target="_blank" rel="noopener noreferrer" class="app-link">
+                App
+                <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://docs.citylayers.eu" target="_blank" rel="noopener noreferrer" class="docs-link">
+                Docs
+                <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path>
+                </svg>
+              </a>
+            </li>
+            <div class="accesibility-logo-mobile">
+              <a href="https://app.citylayers.eu/">
+                <img
+                  src="https://storage.googleapis.com/citylayers-eu/icons/accessibility.svg"
+                  alt="Accesibility Logo"
+                />
+              </a>
+            </div>
+          </ul>
+          <div class="accesibility-logo-desktop">
+            <a href="https://app.citylayers.eu/accessibility">
+              <img src="https://storage.googleapis.com/citylayers-eu/icons/accessibility.svg" alt="Accesibility Logo" />
+            </a>
+          </div>
+          <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="wrapper">
+        <div class="hero-layout">
+          <div class="hero-content">
+            <h2>Collective Knowledge <br />for Better Cities</h2>
+            <p>Revealing Urban Complexities through Everyday Experiences</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image and Text Section -->
+    <section id="about" class="image-text--container">
+      <div class="wrapper">
+        <div class="image-text">
+          <div class="image-box">
+            <img src="https://storage.googleapis.com/citylayers-eu/landing/about.png" alt="better-cities" />
+          </div>
+          <div class="text-box">
+            <span class="overline"> ABOUT CITY LAYERS </span>
+            <h4>
+              From Urban Challenges <br />
+              To Everyday Experience
+            </h4>
+            <p>
+              City Layers is a transdisciplinary framework that translates
+              complex urban phenomena into accessible layers of everyday
+              experience. Our citizen science methodology bridges community
+              insights with expert knowledge, while our digital platform -the
+              core of the project- enables intuitive participatory mapping and
+              sophisticated data visualization. This transformative process
+              converts subjective urban experiences into actionable
+              intelligence, empowering citizens and decision-makers to
+              collaboratively shape more responsive and equitable urban
+              environments.
+            </p>
+            <a
+              onclick="scrollIntoViewWithOffset('#interactive-map', 0)"
+              class="btn"
+              >Explore</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Title and Subtitle Section -->
+    <section class="title-subtitle-centered text-center">
+      <div class="wrapper">
+        <h4>
+          “Mapping what matters, seeing the unseen:<br />
+          City Layers transforms how we see, share and<br />
+          shape urban spaces“
+        </h4>
+        <p>
+          We transform urban complexity into everyday citizen insights<br />
+          through four integrated approaches
+        </p>
+      </div>
+    </section>
+
+    <!-- Four Images Section -->
+    <section class="four-images">
+      <div class="wrapper">
+        <div class="image-grid">
+          <div class="image-item">
+            <img src="https://storage.googleapis.com/citylayers-eu/icons/citizenscience.svg" alt="lightbulb" />
+            <h6>Citizen Science</h6>
+          </div>
+          <div class="image-item">
+            <img src="https://storage.googleapis.com/citylayers-eu/icons/microurbanism.svg" alt="urbanism" />
+            <h6>Micro-urbanism</h6>
+          </div>
+          <div class="image-item">
+            <img src="https://storage.googleapis.com/citylayers-eu/icons/participatorymapping.svg" alt="map" />
+            <h6>Participatory Mapping</h6>
+          </div>
+          <div class="image-item">
+            <img src="https://storage.googleapis.com/citylayers-eu/icons/urbananalythics.svg" alt="data" />
+            <h6>Urban Analytics</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Slider -->
+    <section class="quote-slider">
+      <div class="wrapper">
+        <div class="swiper projects-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="two-cols">
+                <div class="text-right">
+                  <h4 class="quote-slider--projects">Projects</h4>
+                  <span class="overline">Mobility Dashboard</span>
+                  <h4>
+                    Empowering Urban <br />Mobility Through <br />Collective
+                    Intelligence
+                  </h4>
+                  <p>
+                    Targeting the specific challenge of inclusive urban
+                    mobility, this application of City Layers methodology
+                    creates focused insight into transportation patterns. The
+                    interactive dashboard maps movement flows, transit nodes,
+                    and connectivity issues across Vienna, demonstrating how the
+                    framework can be tailored to analyze and visualize
+                    particular urban challenges through collaborative
+                    intelligence.
+                  </p>
+                  <a
+                    href="https://app.citylayers.eu/project/Mobility%20Dashboard"
+                    class="btn"
+                    >READ MORE</a
+                  >
+                </div>
+                <img
+                  src="https://storage.googleapis.com/citylayers-eu/projects/MobilityDashboard/image1.jpg"
+                  alt="Inclusive-Urban-Mobility"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="two-cols">
+                <div class="text-right">
+                  <h4 class="quote-slider--projects">Projects</h4>
+                  <span class="overline">Imagine the Park, Kalamata</span>
+                  <h4>
+                    Mapping Insights for a <br />Community-Driven <br />Park
+                    Regeneration
+                  </h4>
+                  <p>
+                    The first application of City Layers in a participatory
+                    design project adapts the framework to assess a specific
+                    urban typology—the public park. This collaboration with
+                    Kalamata Municipality in Greece maps spatial qualities
+                    unique to green spaces, from vegetation patterns to activity
+                    zones, demonstrating how the framework can be adapted to
+                    flexibly address defined urban forms and typologies.
+                  </p>
+                  <a
+                    href="https://app.citylayers.eu/project/Imagine%20the%20Park,%20Kalamata"
+                    class="btn"
+                    >READ MORE</a
+                  >
+                </div>
+                <img
+                  src="https://storage.googleapis.com/citylayers-eu/projects/Kalamata/image1.JPG"
+                  alt="imagine-the-Park-Kalamata"
+                />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="two-cols">
+                <div class="text-right">
+                  <h4 class="quote-slider--projects">Projects</h4>
+                  <span class="overline">Urban Observations 2024</span>
+                  <h4>
+                    From Individual <br />Observations to <br />Collective
+                    Knowledge.
+                  </h4>
+                  <p>
+                    The first comprehensive framework assesses the
+                    multidimensional qualities of urban space through citizen
+                    experiences. This versatile methodology maps diverse public
+                    realm characteristics—from accessibility to comfort—creating
+                    a holistic understanding of city spaces. The universal
+                    approach transforms subjective observations into structured
+                    spatial knowledge applicable across various urban contexts.
+                  </p>
+                  <a
+                    href="https://app.citylayers.eu/project/Urban%20Observations%202024"
+                    class="btn"
+                    >READ MORE</a
+                  >
+                </div>
+                <img src="https://storage.googleapis.com/citylayers-eu/illustrations/4.jpg" alt="project3" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev projects-slider-button-prev"></div>
+          <div class="swiper-button-next projects-slider-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accomplishments Slider -->
+
+    <section class="accomplishments-slider">
+      <div class="wrapper">
+        <p class="overline overline-title">ACCOMPLISHMENTS AND EVENTS</p>
+        <div class="swiper acc-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="accomplishments-slider--cols">
+                <img src="https://storage.googleapis.com/citylayers-eu/projects/CitizenScienceAward2023/0.jpg" alt="Citizen Science Awards 2023" />
+                <div>
+                  <span class="overline">Citizen Science Award 2023</span>
+                  <p>
+                    City Layers was honoured with the Citizen Science Award
+                    2023. Developed with over 300 citizens, students, and
+                    researchers, this participatory mapping tool enables users
+                    to share observations, add tags, and photos, and engage with
+                    others’ insights on urban spaces.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="accomplishments-slider--cols">
+                <img
+                  src="https://storage.googleapis.com/citylayers-eu/projects/ResponsiveCities2023/image1.png"
+                  alt="Responsive Cities 2023"
+                />
+                <div>
+                  <span class="overline">Responsive Cities 2023</span>
+                  <p>
+                    Our participation in Responsive Cities 2023 featured the
+                    first iteration of City Layers—our innovative mapping
+                    framework and digital tool. We presented the methodology and
+                    initial participatory mapping results, demonstrating how
+                    citizen observations transform into collective spatial
+                    intelligence.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="accomplishments-slider--cols">
+                <img src="https://storage.googleapis.com/citylayers-eu/projects/EUResearchersNight2024/image1.jpg" alt="eu-research" />
+                <div>
+                  <span class="overline">EU Researchers’ Night 2024</span>
+                  <p>
+                    At European Researchers' Night in Graz, we showcased our
+                    collaborative mapping tool, empowering citizens to shape
+                    urban design through shared data. Visitors explored our
+                    responsive dashboard, which integrates community insights to
+                    create more resilient, inclusive cities.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="accomplishments-slider--cols">
+                <img
+                  src="https://storage.googleapis.com/citylayers-eu/projects/InnovationIncubationCenter/image1.jpg"
+                  alt="University-Spin-off"
+                />
+                <div>
+                  <span class="overline"
+                    >Innovation Incubation Center 2024</span
+                  >
+                  <p>
+                    City Layers has been accepted into the “Innovation
+                    Incubation Center” at TU Wien, recognizing our potential as
+                    a scalable, market-ready company. This program provides
+                    expert mentorship, business development resources, and
+                    industry connections, helping us refine our initiative and
+                    accelerate growth.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="accomplishments-slider--cols">
+                <img src="https://storage.googleapis.com/citylayers-eu/projects/EUSparksforClimate2024/image1.jpeg" alt="eu-sparks" />
+                <div>
+                  <span class="overline">EU Sparks for Climate 2024</span>
+                  <p>
+                    Our participation in “EU Sparks for Climate 2024” resulted
+                    in winning the Austrian and German regional competition! Our
+                    initiative, “City Layers for Greener Cities”, addressed the
+                    urgent need for urban green spaces. Our framework
+                    contributed valuable insights to help planners create more
+                    sustainable cities.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next acc-slider-button-next"></div>
+          <div class="swiper-button-prev acc-slider-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+
+        <!-- Quote Slider -->
+        <section class="quote-slider">
+          <div class="wrapper">
+            <div class="swiper projects-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="two-cols">
+                    <div class="text-right">
+                      <span class="overline">Maps of Collective Intelligence</span>
+                      <h4>
+                        How People’s Experiences Shape the Spatial Identity of the City
+                      </h4>
+                      <p>
+                        This map integrates six perceptual layers – Beauty, Sound, Movement, Protection, Climate Comfort, and Activities – based on how people experience the city. While the inner city scores high in beauty, protection, and walkability, it lacks in climate comfort and places to rest. The Donaukanal stands out for its natural soundscape and thermal comfort. Together, they form a human-driven map of urban quality, open to all
+                      </p>
+                    </div>
+                    <div>
+                      <img
+                      src="https://storage.googleapis.com/citylayers-eu/illustrations/dashboard.gif"
+                      alt="Citylayers Dashboard. Mobility Project"
+                    />
+                    <p class="overline">
+                      All the City Layers source code is openly accessible (<a href="https://github.com/citylayers/citylayers/"> on GitHub</a>)
+                    </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="two-cols">
+                    <div class="text-right">
+                      <span class="overline"> People-Driven Site Analyses</span>
+                      <h4>
+                        Lived experiences as a basis for spatial improvement
+                      </h4>
+                      <p>
+                        This zoomed-in analysis shows people’s perceptions of a specific site across comfort, enjoyability, rest, facilities, protection, and cleanliness. The map shows where these qualities – like areas with activity and comfort – are felt strongly. The insights help identify where small changes could make a big difference in how the space is used and enjoyed.                      </p>
+                    </div>
+                    <div>
+                      <img
+                      src="https://storage.googleapis.com/citylayers-eu/illustrations/heatmap_synthetic.gif"
+                      alt="Inclusive-Urban-Mobility"
+                    />
+                    <p class="overline">
+                      All the City Layers source code is openly accessible on GitHub (<a href="https://github.com/citylayers/citylayers/"> on GitHub</a>)
+                    </p>
+                    </div>
+                  </div>
+                </div>
+     
+              </div>
+              <div class="swiper-button-prev projects-slider-button-prev"></div>
+              <div class="swiper-button-next projects-slider-button-next"></div>
+            </div>
+          </div>
+        </section>
+
+
+    <!-- Video Section -->
+    <section class="fading-images">
+      <div class="wrapper">
+        <div class="swiper fade-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="https://storage.googleapis.com/citylayers-eu/illustrations/slideshow4.JPG"
+                alt="Kalamata Workshop"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://storage.googleapis.com/citylayers-eu/projects/MobilityDashboard/workshop.jpeg"
+                alt="Mobility Workshop"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://storage.googleapis.com/citylayers-eu/illustrations/slideshow2.jpeg"
+                alt="Classroom Participation"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://storage.googleapis.com/citylayers-eu/illustrations/slideshow5.jpg" alt="App Close-up" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://storage.googleapis.com/citylayers-eu/illustrations/observationwheel.png"
+                alt="Observations Wheel"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://storage.googleapis.com/citylayers-eu/illustrations/events/VisuallyImpairedWorkshop/1.jpg"
+                alt="Hilfsgeminschaft"
+              />
+            </div>
+          </div>
+          <div class="swiper-button-prev fade-slider-button-prev"></div>
+          <div class="swiper-button-next fade-slider-button-next"></div>
+        </div>
+
+        <p class="text-center">
+          Our collaborative journey of developing City Layers from concept to
+          platform, involves co-creation workshops, field testing,
+          methodological refinement and digital tool advancement —all shaped by
+          and designed for the communities who bring the system to life.
+        </p>
+      </div>
+    </section>
+
+    <!-- Image and Text Section -->
+    <section id="interactive-map" class="iframe-text--container">
+      <div class="wrapper">
+        <div class="iframe-text">
+          <div class="iframe-box">
+            <iframe 
+            frameBorder="0"
+            scrolling="no" 
+            width="100%" height="700" 
+            src="https://app.citylayers.eu/map/Mobility%20Dashboard"></iframe>
+          </div>
+          <div class="text-box">
+            <h4>
+              Ongoing Mobility
+              <br />
+              Mapping Project
+            </h4>
+            <p>
+              Participate to map mobility barriers in places around you!
+            </p>
+            <a
+              href="https://app.citylayers.eu/pin/Mobility%20Dashboard"
+              class="btn"
+              >Add a pin</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team List -->
+    <section class="our-team">
+      <div class="wrapper">
+        <h4 class="text-center">Our team</h4>
+        <div class="team-list">
+          <div class="team-item two-cols">
+            <div class="image">
+              <a
+                target="_blank"
+                href="https://linkedin.com/in/lovro-koncar-gamulin"
+              >
+                <img src="https://storage.googleapis.com/citylayers-eu/team/lovro.png" alt="CL_lovro" />
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://linkedin.com/in/lovro-koncar-gamulin"
+              >
+                <h6>Lovro Končar-Gamulin</h6>
+              </a>
+              <span class="overline">  PROJECT LEAD </span>
+              <p>
+                Orchestrates the strategic vision and execution of City Layers,
+                ensuring the coordination across research, technical, and design
+                components. Lovro ensures project milestones are met while
+                maintaining strategic alignment with research objectives.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-item two-cols">
+            <div class="image">
+              <a target="_blank" href="https://linkedin.com/in/domagoj-krhen">
+                <img src="https://storage.googleapis.com/citylayers-eu/team/domagoj.png" alt="CL_domagoj" />
+              </a>
+            </div>
+            <div>
+              <a target="_blank" href="https://linkedin.com/in/domagoj-krhen">
+                <h6>Domagoj Krhen</h6>
+              </a>
+              <span class="overline"> PRODUCT LEAD </span>
+              <p>
+                Transforms research insights into functionalities of the City
+                Layers platform. Domagoj oversees the evolution of City Layers
+                from conceptual prototype to polished platform, focusing on user
+                experience and feature development.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-item two-cols">
+            <div class="image">
+              <a target="_blank" href="https://linkedin.com/in/androniki-pappa">
+                <img
+                  src="https://storage.googleapis.com/citylayers-eu/team/androniki.png"
+                  alt="CL__androniki"
+                />
+              </a>
+            </div>
+            <div>
+              <a target="_blank" href="https://linkedin.com/in/androniki-pappa">
+                <h6>Androniki Pappa</h6>
+              </a>
+              <span class="overline"> RESEARCH AND PARTICIPATION LEAD </span>
+              <p>
+                Leads City Layers' transdisciplinary methodology, integrating
+                expert knowledge and community insights into urban data
+                collection. Androniki devises the projects' interactive
+                foundation, including expert workshops, mapping processes and
+                data dashboard interface.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-item two-cols">
+            <div class="image">
+              <a target="_blank" href="https://linkedin.com/in/angeloschronis">
+                <img src="https://storage.googleapis.com/citylayers-eu/team/angelos.png" alt="CL_angelos" />
+              </a>
+            </div>
+            <div>
+              <a target="_blank" href="https://linkedin.com/in/angeloschronis">
+                <h6>Angelos Chronis</h6>
+              </a>
+              <span class="overline"> TECH LEAD  </span>
+              <p>
+                Bridges technical implementation with project goals. Angelos
+                guides the technical development of City Layers, optimizes
+                workflows, and ensures technological solutions effectively
+                address complex urban visualization challenges.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-item two-cols">
+            <div class="image">
+              <a target="_blank" href="https://linkedin.com/in/stasja-fedorova">
+                <img src="https://storage.googleapis.com/citylayers-eu/team/stasja.png" alt="CL_stasja" />
+              </a>
+            </div>
+            <div>
+              <a target="_blank" href="https://linkedin.com/in/stasja-fedorova">
+                <h6>Stasja Fedorova</h6>
+              </a>
+
+              <span class="overline"> TECHNICAL IMPLEMENTATION </span>
+              <p>
+                Crafts the code architecture behind City Layers' visualization
+                capabilities. Stasja develops robust back-end systems and data
+                processing frameworks that power the project's interactive
+                mapping features.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-item two-cols">
+            <div class="image">
+              <a
+                target="_blank"
+                href="https://linkedin.com/in/evelinewandlvogt"
+              >
+                <img src="https://storage.googleapis.com/citylayers-eu/team/eveline.png" alt="CL_eveline" />
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://linkedin.com/in/evelinewandlvogt"
+              >
+                <h6>Eveline Wandl-Vogt</h6>
+              </a>
+              <span class="overline"> RESEARCH ADVISOR </span>
+              <p>
+                Provides strategic guidance on citizen science approaches and
+                academic integration. Eveline ensures City Layers maintains
+                scientific rigour while facilitating knowledge transfer between
+                research domains.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Connect Section -->
+    <section class="connect" id="contact">
+      <div class="wrapper text-center">
+        <h4>Let’s connect!</h4>
+        <p>
+          Reach out to collaborate, contribute data, or explore how <br />
+          City Layers can illuminate your neighbourhood's unique spatial story.
+        </p>
+        <a href="mailto:info@citylayers.eu"
+          ><h6 class="connect-link">info@citylayers.eu</h6></a
+        >
+      </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section class="sponsors-slider-section">
+      <div class="wrapper">
+        <div class="swiper sponsors-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="https://storage.googleapis.com/citylayers-eu/partners/tuwien.svg" alt="TU_Wien-Logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://storage.googleapis.com/citylayers-eu/partners/fwf.svg" alt="fwf" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://storage.googleapis.com/citylayers-eu/partners/EU.jpg" alt="EU" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://storage.googleapis.com/citylayers-eu/partners/impetus.svg" alt="IMPETUS" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://storage.googleapis.com/citylayers-eu/partners/oead.svg" alt="OeAD" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://storage.googleapis.com/citylayers-eu/partners/Oesterreich Forscht.png"
+                alt="Oesterreich Forscht"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://storage.googleapis.com/citylayers-eu/partners/kalamata.svg"
+                alt="Minicipality of Kalamata"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://storage.googleapis.com/citylayers-eu/partners/ccm.svg"
+                alt="CommunitycreatesMobility"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://storage.googleapis.com/citylayers-eu/partners/wienextra.svg" alt="WIENXTRA" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://storage.googleapis.com/citylayers-eu/partners/i2c.svg" alt="i2c" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://storage.googleapis.com/citylayers-eu/partners/eusparks.svg"
+                alt="EU Sparks"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://storage.googleapis.com/citylayers-eu/partners/urbanitarium.png" alt="urbanitarium" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="https://storage.googleapis.com/citylayers-eu/logo/logo_2.svg" alt="City Layers Logo" />
+          </div>
+          <div class="footer-nav">
+            <ul>
+              <li>
+                <a
+                  href="https://app.citylayers.eu/impressum"
+                  >Impressum</a
+                >
+              </li>
+              <li>
+                <a href="https://app.citylayers.eu/privacy"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://app.citylayers.eu/accessibility"
+                  >Accessibility</a
+                >
+              </li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <ul>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://linkedin.com/company/city-layers"
+                  ><img src="https://storage.googleapis.com/citylayers-eu/social/IN_logo.svg" alt="Facebook"
+                /></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.instagram.com/city.layers/"
+                  ><img src="https://storage.googleapis.com/citylayers-eu/social/IG_logo.svg" alt="Instagram"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./scripts.js"></script>
+    <script src="./sweeper-bundle.min.js"></script>
+  </body>
+</html>

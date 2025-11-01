@@ -1,0 +1,50 @@
+# This file specifies files that are *not* uploaded to Google Cloud
+# using gcloud commands (like gcloud builds submit)
+
+# Git
+.git
+.gitignore
+
+# Node
+node_modules
+
+# Build outputs
+dist
+client/dst
+
+# Documentation
+*.md
+docs
+
+# IDE
+.vscode
+.idea
+
+# Environment files
+.env
+.env.*
+.keys
+
+# CI/CD
+.github
+
+# Assets
+.assets
+
+# Tests
+test
+coverage
+*.test.js
+*.spec.js
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp
+tmp
+temp
+.cache

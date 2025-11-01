@@ -1,0 +1,21 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', '${_GCP_REGION}-docker.pkg.dev/${_GCP_PROJECT_ID}/${_REPO_NAME}/${_APP_IMAGE_NAME}:${_APP_VERSION}', '.']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', '${_GCP_REGION}-docker.pkg.dev/${_GCP_PROJECT_ID}/${_REPO_NAME}/${_APP_IMAGE_NAME}:${_APP_VERSION}']
+
+substitutions:
+  _APP_VERSION: latest
+  _GCP_PROJECT_ID: $GCP_PROJECT_ID
+  _GCP_REGION: $GCP_REGION
+  _REPO_NAME: $REPO_NAME
+  _APP_IMAGE_NAME: $APP_IMAGE_NAME
+
+images:
+  - '${_GCP_REGION}-docker.pkg.dev/${_GCP_PROJECT_ID}/${_REPO_NAME}/${_APP_IMAGE_NAME}:${_APP_VERSION}'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+  machineType: 'N1_HIGHCPU_8'
+
+timeout: '1800s'
